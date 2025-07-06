@@ -1,18 +1,22 @@
+if game.PlaceId == 3101667897 then
+
+Local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg699/speedscript/refs/heads/main/robloxspeed"))()
+
 local character = {
-    speed = 1000,
-    isRunning = false
+  speed = 1000,
+  isRunning = false
 }
 
 function character:run()
-    if not self.isRunning then
-        self.isRunning = true
-        self.speed = self.speed * 2
-    end
+  if not self.isRunning then
+    self.isRunning = true
+    self.speed = self.speed * 2
+  end
 end
 
 function character:stopRunning()
-    if self.isRunning then
-        self.isRunning = false
-        self.speed = self.speed / 2
-    end
+  if self.isRunning then
+    self.isRunning = false
+    self.speed = self.speed / 2
+  end
 end
